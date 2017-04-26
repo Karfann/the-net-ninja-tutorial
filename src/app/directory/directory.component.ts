@@ -8,6 +8,8 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class DirectoryComponent implements OnInit {
 
+  term: string = "";
+
   ninjas = [
     {name: 'Yoshi', belt: 'black'},
     {name: 'Ryu', belt: 'red'},
