@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>NinjaDirectory</title>
@@ -7,8 +8,25 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCgs6TbQhFVu5E1MtkkfgHpKH1BaD418W8",
+      authDomain: "nn-angular-ae36e.firebaseapp.com",
+      databaseURL: "https://nn-angular-ae36e.firebaseio.com",
+      projectId: "nn-angular-ae36e",
+      storageBucket: "nn-angular-ae36e.appspot.com",
+      messagingSenderId: "423045190280"
+    };
+    firebase.initializeApp(config);
+
+  </script>
 </head>
+
 <body>
   <app-root>Loading...</app-root>
 </body>
+
 </html>

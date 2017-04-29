@@ -5,6 +5,8 @@ import {
   Output, 
   EventEmitter } from '@angular/core';
 
+import { LoggingService } from "./../logging.service";
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -16,7 +18,7 @@ export class HomeComponent implements OnInit {
   @Input()  ninja = {};
   @Output() onYell = new EventEmitter();
 
-  constructor() { }
+  constructor(private logger: LoggingService) { }
 
   ngOnInit() {
   }
@@ -24,5 +26,9 @@ export class HomeComponent implements OnInit {
   fireYellEvent(e){
     this.onYell.emit(e);
   }  
+
+  logIt(){
+    this.logger.log();
+  }
 
 }
